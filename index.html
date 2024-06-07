@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Concentración</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Calculadora de Concentración</h1>
+      <div class="input-container">
+        <label for="opcion">Selecciona una opción:</label>
+        <select id="opcion">
+          <option value="1">% m/m (Porcentaje masa/masa)</option>
+          <option value="2">% m/v (Porcentaje masa/volumen)</option>
+          <option value="3">% v/v (Porcentaje volumen/volumen)</option>
+          <option value="4">ppm (Partes por millón)</option>
+          <option value="5">ppb (Partes por billón)</option>
+          <option value="6">Molaridad (M)</option>
+          <option value="7">Normalidad (N)</option>
+          <option value="8">Fracción molar (X)</option>
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="masa-soluto">Masa del soluto (g):</label>
+        <input type="number" id="masa-soluto" />
+      </div>
+      <div class="input-container">
+        <label for="volumen-solucion">Volumen de la solución (mL):</label>
+        <input type="number" id="volumen-solucion" />
+      </div>
+      <div class="input-container">
+        <label for="densidad-solucion">Densidad de la solución (g/mL):</label>
+        <input type="number" id="densidad-solucion" />
+      </div>
+      <div class="input-container">
+        <label for="masa-molar-soluto">Masa molar del soluto (g/mol):</label>
+        <input type="number" id="masa-molar-soluto" />
+      </div>
+      <button onclick="calcular()">Calcular</button>
+      <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<link rel="stylesheet" href="styles.css" />
